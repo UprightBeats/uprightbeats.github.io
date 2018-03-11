@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Proxima Data Control, www.proximadata.io">
+    <link rel="icon" type="image/x-icon" href="public/images/favicon.ico" />
+    <base href = "" />
+
+    <title>UPRIGHT BEATS</title>
+
+    <!-- Styles -->
+    <link href="public/styles/lib//bootstrap.min.css" rel="stylesheet">
+    <link href="public/styles/lib/fontawesome-all.css" rel="stylesheet">
+    <link href="public/styles/site.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="public/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="public/js/lib/bootstrap.bundle.min.js"></script>
+    <script src="public/js/lib/jquery-ui.min.js"></script>
+    <script src="public/js/lib/angularjs/angular.min.js"></script>
+    <script src="public/js/lib/angularjs/angular-resource.min.js"></script>
+    <script src="public/js/lib/angularjs/angular-sanitize.min.js"></script>
+    <script src="public/js/lib/moment-with-locales.min.js"></script>
+
+<style>
+
+
+</style>
+
+</head>
+
+<body class="theme-dark" id="proxima-data-app-5aa583e39d800a0014184f12-element" ng-controller="itemsData" >
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <img class="logo" src="public/images/logo.png"/>
+        <a class="navbar-brand" href="#">UPRIGHT BEATS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <!-- li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="" ng-controller="ctrlPlayer">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4 col-md-8 offset-2">
+        <h1 class="display-3">UPRIGHT BEATS</h1>
+    </header>
+
+    <audio controls id="playerObject" hidden="hidden">
+        <source type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Enter generated script here -->
+    <div class="row text-center">
+
+    <!--script src="https://www.proximadata.io/userapi/applogic/5aa583e39d800a0014184f12/type/angularjs/user/5aa580129d800a0014184edb/code/"></script>
+    <div class="col-md-8 offset-2">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th ng-repeat="field in fields">
+                        {{field.name}}
+                            </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in items">
+                    <td>
+                        <i class="fa fa-play icon-button" ng-click="playTrack($index)" id="button_{{item._id}}"
+                            ng-class="{'fa-play': playingItem._id != item._id, 'fa-pause':playingItem._id == item._id}">
+                        </i>
+                    </td>
+                    <td ng-repeat="field in fields">
+                        <div class="block-item" bind-html-compile="item[field.name].viewControl"></div>               </td>
+                </tr>
+            </tbody>
+        </table>
+    </div-->
+
+    <script src="https://www.proximadata.io/userapi/applogic/5aa583e39d800a0014184f12/type/angularjs/user/5aa580129d800a0014184edb/code/"></script>
+    <div class="col-md-8 offset-2">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th ng-repeat="field in fields">
+                        {{field.name}}
+                            </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in items">
+                    <td>
+                        <i class="fa fa-play icon-button" ng-click="playTrack($index)" id="button_{{item._id}}"
+                            ng-class="{'fa-play': playingItem._id != item._id, 'fa-pause':playingItem._id == item._id}">
+                        </i>
+                    </td>
+                    <td ng-repeat="field in fields">
+                        <div class="block-item" bind-html-compile="item[field.name].view"></div>               </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container text-center container-social">
+        <div class="social-link">
+            <a href="www.twitter.com/account">
+                <i class="fab fa-twitter twitter"></i>Twitter
+            </a>
+        </div>
+        <div class="social-link">
+            <a href="www.youtube.com/account">
+                <i class="fab fa-youtube youtube"></i>Youtube channel
+            </a>
+        </div>
+        <div class="social-link">
+            <a href="www.instagram.com/account">
+                <i class="fab fa-instagram instagram"></i>Instagram
+            </a>
+        </div>
+        <div class="social-link">
+            <a href="mailto:info@myemail.com">
+                <i class="far fa-envelope email"></i>Email me
+            </a>
+        </div>
+    </div>
+    <div class="container text-center">
+        <p class="m-0 text-center text-white">Copyright &copy; UPRIGHT BEATS 2018, &copy; Proxima Data Control 2018 </p>
+    </div>
+</footer>
+<div class="player row">
+        <div class="col-md-6 offset-1 player-block">
+            <div class="player-buttons col-md-4 text-right">
+                <i class="fas fa-step-backward" ng-click="prevTrack()"></i>
+                <i class="fas" ng-class="{'fa-play': playingItem == null, 'fa-pause':playingItem != null}"
+                    ng-click="playPause()"></i>
+                <i class="fas fa-step-forward" ng-click="nextTrack()"></i>
+            </div>
+            <div class="col-md-7">
+                <input type="range" min="1" max="{{currentDuration}}" ng-model="currentTime" class="slider slider-time" id="rangeTrack">
+                <span class="time-position player-text">{{currentTimePosition}}</span>
+            </div>
+        </div>
+        <div class="col-md-2 player-block">
+            <div class="player-buttons">
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div>
+                <input type="range" min="0" max="10" ng-model="currentVolume" class="slider" id="rangeVolume">
+            </div>
+        </div>
+        <div class="col-md-3 player-text text-left">
+            {{playingItem["Name"].value}}
+        </div>
+    </div>
+<script src="public/js/servicePlayer.js"></script>
+</div>
+</body>
+</html>

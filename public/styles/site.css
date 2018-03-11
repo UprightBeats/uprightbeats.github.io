@@ -1,0 +1,253 @@
+body {
+    padding-top: 54px;
+    position: relative;
+}
+body.theme-dark {
+    background-color: #000000;
+    color: #ffffff;
+}
+body.theme-dark td, body.theme-dark th, body.theme-dark thead th{
+    border-color: #3f615c;
+}
+body.theme-dark .display-3 {
+    text-align: center;
+    color: #fff;
+}
+
+body.theme-light {
+    background-color: #f5f7f7;
+    color: #4c4c4d;
+}
+body.theme-light td, body.theme-light th, body.theme-light thead th{
+    border-color: #f0f1f1;
+}
+body.theme-light .display-3 {
+    text-align: center;
+    color: #4c4c4d;
+}
+.row {
+    margin-right: 0px;
+}
+  
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+  
+.card {
+    height: 100%;
+}
+  
+.jumbotron {
+    background-image: url('../../public/images/header.jpg');
+    background-size: cover;
+    background-position-y: 65%;
+    background-position-x: center;
+    height: 600px;
+}
+.icon-button {
+    cursor: pointer;
+}
+
+/***  social ****/
+.container-social {
+    margin-bottom: 20px;
+}
+.social-link {
+    padding: 10px;
+    display: inline-block;
+}
+.social-link a {
+    text-decoration: none;
+}
+.social-link a:hover {
+    text-decoration: none;
+    color: #a2c1e2;
+}
+body.theme-dark .social-link a {
+    color: #ffffff;
+}
+body.theme-dark .social-link a:hover {
+    color: #a2c1e2;
+}
+
+body.theme-light .social-link a {
+    color: #4a6ca0;
+}
+body.theme-light .social-link a:hover {
+    color: #a2c1e2;
+}
+
+.social-link i {
+    margin-right: 10px;
+}
+.twitter {
+    color: #1DA1F2;
+}
+.instagram {
+    color: #969292;
+}
+.youtube {
+    color: #ff0000;
+}
+.email {
+    color: #ffffff;
+}
+
+/** Data ***/
+/*** You can change these styles to adjust your controls for showing data ***/
+.block-item img {
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+}
+body.theme-dark .block-item a {
+    color: #97c5f5;
+    text-decoration: none;
+}
+body.theme-dark .block-item a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+body.theme-light .block-item a {
+    color: #537294;
+    text-decoration: none;
+}
+body.theme-light .block-item a:hover {
+    color: #5b83ce;
+    text-decoration: underline;
+}
+.check-true {
+    color: #049440;
+}
+.check-false {
+    color: #b42f06;
+}
+.logo {
+    max-width: 26px;
+    margin-right: 10px;
+}
+
+/*********** Switch *********/
+.onoffswitch {
+    position: relative; 
+    width: 32px;
+    -webkit-user-select:none; 
+    -moz-user-select:none; 
+    -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; 
+    overflow: hidden; 
+    cursor: pointer;
+    height: 16px; 
+    padding: 0; 
+    line-height: 16px;
+    border: 2px solid #bdbcbc; 
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease-in;
+    margin-bottom: 0px;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; 
+    width: 16px; 
+    height: 16px;
+    margin: 0px;
+    background: #FFFFFF;
+    position: absolute; 
+    top: 0; 
+    bottom: 0;
+    right: 16px;
+    border: 2px solid #bdbcbc; 
+    border-radius: 16px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #46B044;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #46B044;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+}
+/***** End of switch ********/
+@media screen and (max-width: 600px) {
+    .player {
+        height: 80px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .player {
+        height: 40px;
+    }
+}
+.player {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: #000000;
+    padding: 5px;
+    margin: 0px;
+}
+
+.player div {
+    display: inline-block;
+    vertical-align: middle;
+}
+.player-block div {
+    display: inline-block;
+}
+.player-buttons i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.player-text {
+    font-size: 14px;
+}
+
+/**** Slider *****/
+.slidecontainer {
+    cursor: pointer;
+}
+
+.slider {
+    -webkit-appearance: none;
+    height: 11px;
+    background: #8e5fc0;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+.slider-time {
+    width: calc(100% - 50px);
+}
+
+.slider:hover {
+    background: #6d1bc5;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 11px;
+    height: 11px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 11px;
+    height: 11px;
+    background: #ffffff;
+    cursor: pointer;
+}
+/******* End of slider *****/
