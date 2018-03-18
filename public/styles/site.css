@@ -53,6 +53,14 @@ body.theme-light .display-3 {
     width: 20px;
     margin-right: 5px;
 }
+.copyright-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+.copyright-link:hover {
+    color: #c49ae8;
+    text-decoration: none;
+}
 
 /***  social ****/
 .container-social {
