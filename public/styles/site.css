@@ -49,6 +49,10 @@ body.theme-light .display-3 {
 .icon-button {
     cursor: pointer;
 }
+.small-icon {
+    width: 20px;
+    margin-right: 5px;
+}
 
 /***  social ****/
 .container-social {
