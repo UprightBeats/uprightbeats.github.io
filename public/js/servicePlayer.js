@@ -1,5 +1,5 @@
 //(function( ng, app ) {
-proxima_data_app_5aa583e39d800a0014184f12.controller('ctrlPlayer', 
+proxima_data_app_5aadc2ba427174001498ade0.controller('ctrlPlayer', 
     ['$scope', '$injector', function($scope, $injector) {
         $scope.playingItem = null;
         $scope.currentDuration = 100;
@@ -60,10 +60,10 @@ proxima_data_app_5aa583e39d800a0014184f12.controller('ctrlPlayer',
             //console.log(index);
             var playerButton = $('#button_' + $scope.playingItem._id);
 
-            var src = 'public/tracks/' + $scope.playingItem['File name'];
+            var src = $scope.playingItem['Beat name'].url;
             
 
-            if (playerObject.src.indexOf(escape(src)) == -1){
+            if (playerObject.src.indexOf(src) == -1){
                 // Another song, always play
                 playerObject.src = src;
                 playerObject.play();

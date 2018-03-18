@@ -34,7 +34,7 @@
 
 </head>
 
-<body class="theme-dark" id="proxima-data-app-5aa583e39d800a0014184f12-element" ng-controller="itemsData" >
+<body class="theme-dark" id="proxima-data-app-5aadc2ba427174001498ade0-element" ng-controller="itemsData" >
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -106,7 +106,7 @@
         </table>
     </div-->
 
-    <script src="https://www.proximadata.io/userapi/applogic/5aa583e39d800a0014184f12/type/angularjs/user/5aa580129d800a0014184edb/code/"></script>
+    <!--script src="https://www.proximadata.io/userapi/applogic/5aa583e39d800a0014184f12/type/angularjs/user/5aa580129d800a0014184edb/code/"></script>
     <div class="col-md-8 offset-2">
         <table class="table">
             <thead>
@@ -130,8 +130,32 @@
             </tbody>
         </table>
 
+    </div -->
+    <script src="https://www.proximadata.io/userapi/applogic/5aadc2ba427174001498ade0/type/angularjs/user/5aa580129d800a0014184edb/code/"></script>
+    <div class="col-md-8 offset-2">
+       <table class="table">
+           <thead>
+               <tr>
+                    <th></th>
+                   <th ng-repeat="field in fields">
+                       {{field.name}}
+                           </th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr ng-repeat="item in items">
+                    <td>
+                        <i class="fa fa-play icon-button" ng-click="playTrack($index)" id="button_{{item._id}}"
+                            ng-class="{'fa-play': playingItem._id != item._id, 'fa-pause':playingItem._id == item._id}">
+                        </i>
+                    </td>
+                   <td ng-repeat="field in fields">
+                       <div class="block-item" bind-html-compile="item[field.name].view"></div>
+                   </td>
+               </tr>
+           </tbody>
+       </table>
     </div>
-
 </div>
 <!-- /.container -->
 
