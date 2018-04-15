@@ -204,7 +204,7 @@
                                 </i>
                             </td>
                         <td ng-repeat="field in fields">
-                            <div class="block-item" bind-html-compile="item[field.name].view"></div>
+                            <div class="block-item" ng-class="{'field-name': field.name == 'Name'}" bind-html-compile="item[field.name].view"></div>
                         </td>
                         <td>
                             <a ng-show="item['GumroadLink']" class="button-buy" 
