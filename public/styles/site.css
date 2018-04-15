@@ -1,6 +1,8 @@
 body {
     padding-top: 54px;
     position: relative;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
 }
 body.theme-dark {
     background-color: #000000;
@@ -224,6 +226,48 @@ body.theme-light .block-item a:hover {
 .player-text {
     font-size: 14px;
 }
+.section-license {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.block-license {
+    background-color: #541a77;
+    border: 1px solid #70527d;
+    border-radius: 3px;
+    text-align: center;
+    padding: 0px;
+}
+.block-license .header-free{
+    background-color: #8d3ecd;
+    padding: 13px;
+}
+.block-license .header-mp3{
+    background-color: #63348a;
+    padding: 13px;
+}
+.block-license .header-trackedout{
+    background-color: #341f44;
+    padding: 13px;
+}
+.block-license .header-exclusive{
+    background-color: #1b0d25;
+    padding: 13px;
+}
+.block-license .content {
+    padding: 13px;
+    text-align: left;
+    min-height: 210px;
+}
+.block-license .button {
+    text-align: center;
+    padding: 13px;
+}
+.block-license .button button {
+    background-color: #d8e1ea;
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold;
+}
 
 /**** Slider *****/
 .slidecontainer {
@@ -263,3 +307,12 @@ body.theme-light .block-item a:hover {
     cursor: pointer;
 }
 /******* End of slider *****/
+
+/******* Modal *************/
+.modal-title, .modal-body {
+    color: #000;
+}
+.modal-body {
+    padding: 1rem 40px;
+}
+/******* End of modal ******/

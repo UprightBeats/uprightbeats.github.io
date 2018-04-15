@@ -1,4 +1,26 @@
 //(function( ng, app ) {
+var licenses = [
+    {
+        type: 'mp3',
+        title: 'MP3 Lease License',
+        file: 'mp3.html'
+    },
+    {
+        type: 'trackedout',
+        title: 'Tracked Out Lease License',
+        file: 'trackedout.html'
+    },
+    {
+        type: 'unlimited',
+        title: 'Unlimited Lease License',
+        file: 'unlimited.html'
+    },
+    {
+        type: 'exclusive',
+        title: 'Exclusive Lease License',
+        file: 'exclusive.html'
+    }
+];
 proxima_data_app_5aadc2ba427174001498ade0.controller('ctrlPlayer', 
     ['$scope', '$injector', function($scope, $injector) {
         $scope.playingItem = null;
@@ -99,6 +121,13 @@ proxima_data_app_5aadc2ba427174001498ade0.controller('ctrlPlayer',
             if ($scope.currentIndex > 0){
                 $scope.playTrack($scope.currentIndex - 1);
             }
+        };
+
+        $scope.showFullLicense = function(licenseType){
+            $scope.license = _.find(licenses, {type: licenseType});
+            $('.modal-body').load('public/licenses/' + $scope.license.file, function(){
+                $('#modalLicenseText').modal({show:true});
+            });
         };
 }]); 
 //})( angular, proxima_data_app_5aa3106e28a50fa7190bb4d6 );
