@@ -36,6 +36,7 @@
     <script src="public/js/lib/angularjs/angular-sanitize.min.js"></script>
     <script src="public/js/lib/moment-with-locales.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <script src="https://gumroad.com/js/gumroad.js"></script>
 
 <style>
 
@@ -184,14 +185,15 @@
     <!-- Enter generated script here -->
     <div class="row text-center">
         <script src="https://www.proximadata.io/userapi/applogic/5aadc2ba427174001498ade0/type/angularjs/user/5aa580129d800a0014184edb/code/"></script>
-        <div class="col-md-8 offset-2">
+        <div class="col-md-10 offset-1">
             <table class="table proxima-data-container-5aadc2ba427174001498ade0">
                 <thead>
                     <tr>
                         <th></th>
                         <th ng-repeat="field in fields">
                             {{field.name}}
-                                </th>
+                        </th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -203,6 +205,10 @@
                             </td>
                         <td ng-repeat="field in fields">
                             <div class="block-item" bind-html-compile="item[field.name].view"></div>
+                        </td>
+                        <td>
+                            <a ng-show="item['GumroadLink']" class="button-buy" 
+                                href="{{item['GumroadLink']}}">Buy now</a>
                         </td>
                     </tr>
                 </tbody>

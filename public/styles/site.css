@@ -331,3 +331,12 @@ body.theme-light .block-item a:hover {
     text-decoration: none;
     color: #ffffff;
 }
+.button-buy {
+    background-color: #6038a2;
+    color: #d9dbdc;
+    padding: 5px 14px;
+}
+.button-buy:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
