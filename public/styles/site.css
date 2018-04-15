@@ -316,3 +316,18 @@ body.theme-light .block-item a:hover {
     padding: 1rem 40px;
 }
 /******* End of modal ******/
+.block-legal {
+    position: relative;
+}
+.links-legal {
+    position: absolute;
+    right: 0px;
+}
+.links-legal a {
+    margin-right: 10px;
+    color: #c4c6c7;
+}
+.links-legal a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
