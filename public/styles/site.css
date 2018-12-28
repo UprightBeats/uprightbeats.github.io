@@ -54,6 +54,16 @@ body.theme-light .display-3 {
 .small-icon {
     width: 16px;
 }
+.email-box {
+    max-width: 200px;
+    display: inline-block;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #541a77;
+    border-color: #63348a;
+    margin-bottom: 4px;
+}
 .copyright-link {
     color: #ffffff;
     text-decoration: none;
