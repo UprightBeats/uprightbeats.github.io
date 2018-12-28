@@ -52,8 +52,7 @@ body.theme-light .display-3 {
     cursor: pointer;
 }
 .small-icon {
-    width: 20px;
-    margin-right: 5px;
+    width: 16px;
 }
 .copyright-link {
     color: #ffffff;
@@ -316,6 +315,13 @@ body.theme-light .block-item a:hover {
     padding: 1rem 40px;
 }
 /******* End of modal ******/
+.header-link {
+    color: #e7e8e9 !important;
+}
+.header-link:hover {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
 .block-legal {
     position: relative;
 }
