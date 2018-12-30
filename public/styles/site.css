@@ -362,3 +362,7 @@ body.theme-light .block-item a:hover {
     font-size: 16px;
     line-height: 21px;
 }
+
+.nav .bg-dark {
+    background-color: #292929 !important;
+}
