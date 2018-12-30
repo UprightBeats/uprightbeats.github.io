@@ -363,6 +363,6 @@ body.theme-light .block-item a:hover {
     line-height: 21px;
 }
 
-.nav .bg-dark {
+nav .bg-dark {
     background-color: #292929 !important;
 }
